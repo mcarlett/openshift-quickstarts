@@ -47,7 +47,7 @@ public class MessageServlet extends HttpServlet {
         final PrintWriter writer = resp.getWriter();
         //writer.write(message);
         System.getProperties().entrySet().stream()
-                .forEach(entry -> writer.write(entry.toString()+"<br/>"));
+                .forEach(entry -> writer.write(entry.toString()+"\n"));
         writer.close();
     }
 
